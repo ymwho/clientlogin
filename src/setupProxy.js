@@ -4,7 +4,7 @@ module.exports = function (server) {
   server.use(
     '/api',
     createProxyMiddleware({
-      target: 'https://git.heroku.com/heroku-parametertree.git',
+      target: 'https://heroku-parametertree.herokuapp.com/',
       changeOrigin: true,
     })
   );
